@@ -10,8 +10,8 @@ const server = http.createServer((req, res) => {
 
     res.end(JSON.stringify({
         // uncomment for testing
-        // localaddress: req.connection.localAddress,
-        ipaddress: req.connection.remoteAddress,
+        localaddress: req.socket.localAddress,
+        ipaddress: req.socket.remoteAddress,
         language: headers['accept-language'].split(",")[0],
         software: headers['user-agent'].match(/\(([^\)]+)\)/)[1]
     }));
