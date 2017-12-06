@@ -5,11 +5,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chelle-mine/whoru"
+    "url": "https://github.com/chelle-mine/whoru.git"
   },
   "scripts": {
     "start": "node index.js",
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "mocha --reporter spec"
   },
   "license": "ISC",
   "dependencies": {},
